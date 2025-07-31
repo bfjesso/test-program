@@ -177,6 +177,31 @@ short condition7(char c)
 	}
 }
 
+short condition8(char c)
+{
+	if ((c > 2 || c < 8) && c != 6) 
+	{
+		int x = c * 3;
+		return x + c;
+	}
+	else if (c > 12) 
+	{
+		int y = 6 * c;
+		if (y < 200) 
+		{
+			return 0;
+		}
+		else 
+		{
+			return 1;
+		}
+	}
+	else 
+	{
+		return 90;
+	}
+}
+
 int main() 
 {
 	int a = 14;
@@ -202,6 +227,7 @@ int main()
 	short cond5 = condition5(c);
 	short cond6 = condition6(c);
 	short cond7 = condition7(c);
+	short cond8 = condition8(c);
 	
 	return 0;
 }
